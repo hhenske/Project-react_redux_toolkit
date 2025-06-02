@@ -19,7 +19,7 @@ const AddPostForm = () => {
     const onSavePostClicked = () => {
         if (title && content) {
             dispatch(
-                postAdded(title, content, user)
+                postAdded(title, content, userId)
                 )
 
             setTitle('');
@@ -49,7 +49,7 @@ const AddPostForm = () => {
                 <label htmlFor="postAuthor">Author: </label>
                 <select id="postAuthor" value={userId} onChange={onAuthorChanged}>
                     <option value=""></option>
-                    {usesOptions}
+                    {usersOptions}
                 </select>
                 <label htmlFor="postContent">Content: </label>
                 <textarea

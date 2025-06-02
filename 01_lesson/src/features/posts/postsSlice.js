@@ -20,7 +20,7 @@ const postsSlice = createSlice({
                         id: nanoid(),
                         title,
                         content,
-                        userId
+                        user: userId
                     }
                 }
             }
